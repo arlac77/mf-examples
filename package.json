@@ -9,10 +9,10 @@
     "lint:css": "stylelint ./src/*.css"
   },
   "devDependencies": {
-    "npm-pkgbuild": "^10.11.3",
-    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "npm-pkgbuild": "^10.11.3",
     "semantic-release": "^19.0.3",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0"
@@ -32,7 +32,7 @@
       },
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "install.sub.dir": "/frontend/"
+    "groups": "examples"
   },
   "release": {
     "plugins": [
@@ -53,5 +53,8 @@
       "arlac77/template-pacman",
       "arlac77/template-web-app"
     ]
+  },
+  "dependencies": {
+    "svelte-guard-history-router": "^5.1.9"
   }
 }
