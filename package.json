@@ -1,12 +1,26 @@
 {
   "name": "mf-examples",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "web"
   ],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
   "scripts": {
     "lint": "npm run lint:css",
     "lint:css": "stylelint ./src/*.css"
+  },
+  "dependencies": {
+    "mf-hosting": "^1.7.1",
+    "svelte-guard-history-router": "^5.1.9"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -33,7 +47,8 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "groups": "examples",
-    "http.path": "${http.base.path}"
+    "http.path": "${http.base.path}",
+    "install.sub.dir": "/frontend/"
   },
   "release": {
     "plugins": [
@@ -51,12 +66,9 @@
   },
   "template": {
     "inheritFrom": [
+      "arlac77/template-arlac77-github",
       "arlac77/template-pacman",
       "arlac77/template-web-app"
     ]
-  },
-  "dependencies": {
-    "mf-hosting": "^1.7.1",
-    "svelte-guard-history-router": "^5.1.9"
   }
 }
