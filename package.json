@@ -47,8 +47,7 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "groups": "examples",
-    "http.path": "${http.base.path}",
-    "install.sub.dir": "/frontend/"
+    "http.path": "${http.base.path}"
   },
   "release": {
     "plugins": [
