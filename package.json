@@ -55,6 +55,7 @@
     ]
   },
   "dependencies": {
+    "mf-hosting": "^1.7.1",
     "svelte-guard-history-router": "^5.1.9"
   }
 }
