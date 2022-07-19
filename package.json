@@ -28,11 +28,12 @@
   "pkgbuild": {
     "content": {
       "${install.dir}": {
-        "base": "public/"
+        "base": "src"
       },
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "groups": "examples"
+    "groups": "examples",
+    "http.path": "${http.base.path}"
   },
   "release": {
     "plugins": [
