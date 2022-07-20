@@ -1,10 +1,10 @@
 {
   "name": "mf-examples",
   "version": "0.0.0-semantic-release",
-  "description": "examples entry page",
   "publishConfig": {
     "access": "public"
   },
+  "description": "examples entry page",
   "keywords": [
     "web"
   ],
