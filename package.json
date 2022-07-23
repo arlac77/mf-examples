@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "mf-hosting": "^1.7.1",
+    "mf-styling": "^1.2.33",
     "svelte-command": "^1.1.22",
     "svelte-common": "^4.6.10",
     "svelte-entitlement": "^1.2.30",
@@ -52,7 +53,7 @@
   "pkgbuild": {
     "content": {
       "${install.dir}": {
-        "base": "src"
+        "base": "build"
       },
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },

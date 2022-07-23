@@ -6,3 +6,5 @@
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fmf-examples%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/arlac77/mf-examples/goto)
 [![Coverage Status](https://coveralls.io/repos/arlac77/mf-examples/badge.svg)](https://coveralls.io/github/arlac77/mf-examples)
 # mf-examples
+
+Examples entry page
