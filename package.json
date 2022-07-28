@@ -58,6 +58,7 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "groups": "examples",
+    "install.dir": "${install.base.dir}",
     "http.path": "${http.base.path}"
   },
   "release": {
