@@ -29,7 +29,7 @@
     "svelte-command": "^1.1.22",
     "svelte-common": "^4.6.11",
     "svelte-entitlement": "^1.2.30",
-    "svelte-guard-history-router": "^5.1.10",
+    "svelte-guard-history-router": "^5.1.11",
     "svelte-log-view": "^4.2.14"
   },
   "devDependencies": {
