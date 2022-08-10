@@ -24,12 +24,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mf-hosting": "^1.7.1",
+    "mf-hosting": "^1.7.2",
     "mf-styling": "^1.2.44",
     "svelte-command": "^1.1.22",
     "svelte-common": "^4.6.13",
     "svelte-entitlement": "^1.2.30",
-    "svelte-guard-history-router": "^5.1.12",
+    "svelte-guard-history-router": "^5.1.13",
     "svelte-log-view": "^4.2.14"
   },
   "devDependencies": {
