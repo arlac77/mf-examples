@@ -13,5 +13,7 @@
     }
   ],
   "background_color": "#ffffff",
-  "categories": ["examples"]
+  "categories": [
+    "examples"
+  ]
 }
