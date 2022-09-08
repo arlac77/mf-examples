@@ -30,7 +30,8 @@
     "svelte-common": "^4.19.7",
     "svelte-entitlement": "^1.2.30",
     "svelte-guard-history-router": "^5.4.3",
-    "svelte-log-view": "^4.2.14"
+    "svelte-log-view": "^4.2.14",
+    "svelte-session-manager": "^2.0.11"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
