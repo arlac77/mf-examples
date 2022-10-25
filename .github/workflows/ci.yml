@@ -24,9 +24,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     needs:
-      - test
+      - test-node
     runs-on: ubuntu-latest
-  test:
+  test-node:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -50,7 +50,7 @@ jobs:
           path-to-lcov: build/coverage/lcov.info
           parallel: true
   finish:
-    needs: test
+    needs: test-node
     runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
