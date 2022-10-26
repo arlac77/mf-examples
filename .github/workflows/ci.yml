@@ -49,7 +49,8 @@ jobs:
           path-to-lcov: build/coverage/lcov.info
           parallel: true
   finish:
-    needs: test-node
+    needs:
+      - test-node
     runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
