@@ -29,8 +29,8 @@
     "npm-dep-graph": "^1.0.61",
     "svelte-command": "^1.1.24",
     "svelte-common": "^4.19.8",
-    "svelte-entitlement": "^1.2.34",
-    "svelte-guard-history-router": "^5.5.2",
+    "svelte-entitlement": "^1.2.35",
+    "svelte-guard-history-router": "^5.5.3",
     "svelte-log-view": "^4.2.14",
     "svelte-session-manager": "^2.0.11"
   },
