@@ -24,7 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mf-hosting": "^1.7.7",
+    "mf-hosting": "^1.7.8",
     "mf-styling": "^1.7.23",
     "npm-dep-graph": "^1.0.61",
     "svelte-command": "^1.1.24",
