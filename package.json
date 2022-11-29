@@ -28,7 +28,7 @@
     "mf-styling": "^1.7.23",
     "npm-dep-graph": "^1.0.61",
     "svelte-command": "^1.1.24",
-    "svelte-common": "^4.19.9",
+    "svelte-common": "^4.19.11",
     "svelte-entitlement": "^1.2.36",
     "svelte-guard-history-router": "^5.5.5",
     "svelte-log-view": "^4.2.14",
