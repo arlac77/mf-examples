@@ -8,3 +8,4 @@ doc
 .github
 *.map
 pkg
+dist
