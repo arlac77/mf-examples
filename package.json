@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "mf-hosting": "^1.8.0",
-    "mf-styling": "^1.7.31",
+    "mf-styling": "^1.7.32",
     "npm-dep-graph": "^1.0.61",
     "svelte-command": "^1.1.24",
     "svelte-common": "^4.21.1",
