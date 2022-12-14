@@ -24,18 +24,6 @@
     "lint:css": "stylelint ./src/*.css",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "mf-hosting": "^1.8.0",
-    "mf-styling": "^1.7.32",
-    "npm-dep-graph": "^1.0.61",
-    "svelte-command": "^1.1.25",
-    "svelte-common": "^4.21.3",
-    "svelte-entitlement": "^1.2.39",
-    "svelte-guard-history-router": "^5.5.13",
-    "svelte-log-view": "^4.2.14",
-    "svelte-session-manager": "^2.0.11",
-    "svelte-websocket-store": "^1.1.33"
-  },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
@@ -44,7 +32,8 @@
     "semantic-release": "^19.0.5",
     "stylelint": "^14.16.0",
     "stylelint-config-standard": "^29.0.0",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "mf-hosting": "^1.8.0"
   },
   "repository": {
     "type": "git",
@@ -59,7 +48,17 @@
       "${install.dir}": {
         "base": "build"
       },
-      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "depends": {
+        "mf-styling": "^1.7.32",
+        "svelte-command": "^1.1.25",
+        "svelte-common": "^4.21.3",
+        "svelte-entitlement": "^1.2.39",
+        "svelte-guard-history-router": "^5.5.13",
+        "svelte-log-view": "^4.2.14",
+        "svelte-session-manager": "^2.0.11",
+        "svelte-websocket-store": "^1.1.33"    
+      }
     },
     "groups": "examples",
     "http.path": "${http.base.path}",
