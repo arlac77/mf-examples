@@ -52,14 +52,14 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "depends": {
-      "mf-styling": "^1.7.32",
-      "svelte-command": "^1.1.25",
-      "svelte-common": "^4.21.3",
-      "svelte-entitlement": "^1.2.39",
-      "svelte-guard-history-router": "^5.5.13",
-      "svelte-log-view": "^4.2.14",
-      "svelte-session-manager": "^2.0.11",
-      "svelte-websocket-store": "^1.1.33"
+      "mf-styling": ">=1.7.32",
+      "svelte-command": ">=1.1.25",
+      "svelte-common": ">=4.21.3",
+      "svelte-entitlement": ">=1.2.39",
+      "svelte-guard-history-router": ">=5.5.13",
+      "svelte-log-view": ">=4.2.14",
+      "svelte-session-manager": ">=2.0.11",
+      "svelte-websocket-store": ">=1.1.33"
     },
     "groups": "examples",
     "http.path": "${http.base.path}",
