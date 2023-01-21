@@ -58,7 +58,7 @@
       "svelte-session-manager": ">=2.0.11",
       "svelte-websocket-store": ">=1.1.33"
     },
-    "http.path": "${http.base.pasth}",
+    "http.path": "${http.base.path}",
     "install.dir": "${install.base.dir}",
     "frontend": true,
     "example": true
