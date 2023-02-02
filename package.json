@@ -1,6 +1,6 @@
 {
   "name": "mf-examples",
-  "version": "1.3.3",
+  "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
@@ -30,15 +30,15 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "mf-hosting-frontend": "^1.6.2",
     "mf-styling": "^1.7.42",
-    "npm-pkgbuild": "^11.0.0",
-    "semantic-release": "^20.0.2",
-    "stylelint": "^14.16.0",
+    "npm-pkgbuild": "^11.1.14",
+    "semantic-release": "^20.1.0",
+    "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0",
-    "vite": "^4.0.4"
+    "vite": "^4.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arlac77/mf-examples.git"
+    "url": "https://github.com/arlac77/mf-examples"
   },
   "bugs": {
     "url": "https://github.com/arlac77/mf-examples/issues"
@@ -58,10 +58,10 @@
       "svelte-session-manager": ">=2.0.11",
       "svelte-websocket-store": ">=1.1.33"
     },
-    "http.path": "${http.base.path}",
-    "install.dir": "${install.base.dir}",
+    "example": true,
     "frontend": true,
-    "example": true
+    "http.path": "${http.base.path}",
+    "install.dir": "${install.base.dir}"
   },
   "release": {
     "plugins": [
