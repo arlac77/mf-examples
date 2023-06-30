@@ -25,7 +25,6 @@ export default defineConfig(async ({ command, mode }) => {
     server: { host: true },
     build: {
       outDir: "../build",
-      target: "esnext",
       emptyOutDir: true,
       minify: production,
       sourcemap: true
