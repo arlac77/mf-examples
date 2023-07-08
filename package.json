@@ -27,12 +27,12 @@
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^11.0.3",
-    "mf-hosting-frontend": "^1.9.5",
+    "mf-hosting-frontend": "^1.10.0",
     "mf-styling": "^2.0.1",
     "npm-pkgbuild": "^11.8.9",
     "semantic-release": "^21.0.5",
     "stylelint": "^15.9.0",
-    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard": "^34.0.0",
     "vite": "^4.3.9"
   },
   "repository": {
