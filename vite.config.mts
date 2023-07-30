@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import { compression } from 'vite-plugin-compression2';
+import { compression } from "vite-plugin-compression2";
 import { extractFromPackage } from "npm-pkgbuild";
 
 export default defineConfig(async ({ command, mode }) => {
@@ -29,7 +29,8 @@ export default defineConfig(async ({ command, mode }) => {
         algorithm: "brotliCompress",
         exclude: [/\.(br)$/, /\.(gz)$/, /\.(png)$/, /\.(jpg)$/],
         threshold: 500,
-        deleteOriginalAssets: true })
+        deleteOriginalAssets: true
+      })
     ],
     build: {
       outDir: "../build",
