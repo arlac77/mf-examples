@@ -26,8 +26,9 @@ export default defineConfig(async ({ command, mode }) => {
     server: { host: true },
     plugins: [
       compression({
-        algorithm: 'brotliCompress',
-        exclude: [/\.(br)$/, /\.(gz)$/],
+        algorithm: "brotliCompress",
+        exclude: [/\.(br)$/, /\.(gz)$/, /\.(png)$/, /\.(jpg)$/],
+        threshold: 500,
         deleteOriginalAssets: true })
     ],
     build: {
