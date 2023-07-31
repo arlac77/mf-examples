@@ -28,8 +28,7 @@ export default defineConfig(async ({ command, mode }) => {
       compression({
         algorithm: "brotliCompress",
         exclude: [/\.(br)$/, /\.(gz)$/, /\.(png)$/, /\.(jpg)$/],
-        threshold: 500,
-        deleteOriginalAssets: true
+        threshold: 500
       })
     ],
     build: {
