@@ -28,7 +28,7 @@
     "@semantic-release/commit-analyzer": "^11.0.0",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^12.0.0",
-    "mf-hosting-frontend": "^2.2.3",
+    "mf-hosting-frontend": "^2.2.4",
     "mf-styling": "^3.0.6",
     "npm-pkgbuild": "^12.0.2",
     "semantic-release": "^22.0.0",
