@@ -20,6 +20,7 @@
   "scripts": {
     "prepare": "vite build",
     "start": "vite",
+    "test": "true",
     "lint": "npm run lint:css",
     "lint:css": "stylelint ./src/*.css",
     "preview": "vite preview"
