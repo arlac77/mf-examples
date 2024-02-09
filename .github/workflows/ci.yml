@@ -1,37 +1,16 @@
+name: CI
+"on":
+  push:
+    branches:
+      - master
+      - next
+  pull_request:
+    branches:
+      - master
+      - next
+permissions:
+  contents: read
 jobs:
-  release:
-    steps:
-      - name: Dependencies
-        run: >
-          sudo apt-get update
-
-          sudo apt-get install ksh curl
-
-          wget
-          https://github.com/ThePoorPilot/pacman-utils/releases/download/5.2.2-3_2.31-0/pacman-utils_5.2.2-3_amd64.deb
-
-          sudo apt-get install -f ./pacman-utils_5.2.2-3_amd64.deb
-      - uses: actions/checkout@v4.1.1
-      - uses: actions/setup-node@v4.0.2
-        with:
-          node-version: 20.11.0
-          cache: npm
-          cache-dependency-path: package-lock.json
-      - run: npm ci
-      - run: npx semantic-release
-        env:
-          CI: 'true'
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
-    needs:
-      - test-node
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      id-token: write
   test-node:
     runs-on: ubuntu-latest
     strategy:
@@ -66,15 +45,36 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: build/coverage/lcov.info
           parallel-finished: true
-name: CI
-'on':
-  push:
-    branches:
-      - master
-      - next
-  pull_request:
-    branches:
-      - master
-      - next
-permissions:
-  contents: read
+  release:
+    needs:
+      - test-node
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - name: Dependencies
+        run: >
+          sudo apt-get update
+
+          sudo apt-get install ksh curl
+
+          wget
+          https://github.com/ThePoorPilot/pacman-utils/releases/download/5.2.2-3_2.31-0/pacman-utils_5.2.2-3_amd64.deb
+
+          sudo apt-get install -f ./pacman-utils_5.2.2-3_amd64.deb
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.11.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          CI: "true"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
