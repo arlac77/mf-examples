@@ -61,7 +61,8 @@
       "svelte-session-manager": ">=2.0.11",
       "svelte-websocket-store": ">=1.1.33",
       "svelte-repository-provider": ">=1.0.0",
-      "kronos-svelte-components": ">=2.4.94"
+      "kronos-svelte-components": ">=2.4.94",
+      "resume-renderer-example": ">=1.0.2"
     },
     "example": true,
     "frontend": true,
