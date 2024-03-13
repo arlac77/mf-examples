@@ -52,7 +52,7 @@
     "content": {
       "${install.dir}": "build/"
     },
-    "depends": {
+    "dependencies": {
       "mf-styling": ">=1.7.32",
       "svelte-command": ">=1.1.25",
       "svelte-common": ">=4.21.3",
