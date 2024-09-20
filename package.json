@@ -32,7 +32,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/github": "^10.3.4",
     "@semantic-release/release-notes-generator": "^14.0.1",
-    "mf-hosting-frontend": "^3.2.4",
+    "mf-hosting-frontend": "^3.3.1",
     "mf-styling": "^3.1.9",
     "npm-pkgbuild": "^15.3.35",
     "semantic-release": "^24.1.1",
