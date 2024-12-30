@@ -24,7 +24,7 @@
     "start": "vite",
     "test": "true",
     "lint": "node --run lint:css",
-    "lint:css": "stylelint ./src/*.css",
+    "lint:css": "stylelint ./src**/*.css",
     "preview": "vite preview"
   },
   "devDependencies": {
