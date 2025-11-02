@@ -17,26 +17,6 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 22.15.0
-          - 22.15.1
-          - 22.16.0
-          - 22.17.0
-          - 22.17.1
-          - 22.18.0
-          - 22.19.0
-          - 22.20.0
-          - 22.21.0
-          - 24.0.0
-          - 24.0.1
-          - 24.0.2
-          - 24.2.0
-          - 24.3.0
-          - 24.5.0
-          - 24.6.0
-          - 24.7.0
-          - 24.8.0
-          - 24.9.0
-          - 24.10.0
           - 24.11.0
     steps:
       - name: checkout
@@ -93,7 +73,6 @@ jobs:
         run: npx semantic-release
         env:
           CI: "true"
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PKGEXT: .pkg.tar.xz
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
