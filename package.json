@@ -37,7 +37,7 @@
     "mf-styling": "^3.2.16",
     "npm-pkgbuild": "^19.0.6",
     "semantic-release": "^25.0.2",
-    "stylelint": "^16.26.0",
+    "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
     "vite": "^7.2.4",
     "vite-plugin-compression2": "^2.3.1"
