@@ -7,5 +7,6 @@ doc
 .vscode
 .github
 *.map
+vite.config.mts
 pkg
 dist
