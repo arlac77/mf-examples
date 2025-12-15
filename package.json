@@ -34,7 +34,7 @@
     "@semantic-release/github": "^12.0.2",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "mf-hosting-frontend": "^3.9.11",
-    "mf-styling": "^3.2.23",
+    "mf-styling": "^3.2.24",
     "npm-pkgbuild": "^19.1.2",
     "semantic-release": "^25.0.2",
     "stylelint": "^16.26.1",
