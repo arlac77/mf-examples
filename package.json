@@ -65,7 +65,8 @@
       "svelte-websocket-store": ">=1.2.6",
       "svelte-repository-provider": ">=2.0.76",
       "kronos-svelte-components": ">=2.4.94",
-      "resume-renderer-example": ">=1.0.2"
+      "resume-renderer-example": ">=1.0.2",
+      "npm-navigator": ">=2.2.1"
     },
     "example": true,
     "frontend": true,
